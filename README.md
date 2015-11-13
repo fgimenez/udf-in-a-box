@@ -7,8 +7,8 @@ The basic command is:
 ```
 docker run \
   --privileged=true \
-  -v $PWD:/tmp/udf
-  -t fgimenez/udf-in-a-box
+  -v $PWD:/tmp/udf \
+  -t fgimenez/udf-in-a-box \
   ubuntu-device-flash core 15.04 -o /tmp/udf/file.img --channel stable
 ```
 
@@ -17,9 +17,9 @@ and you end with the generated ```file.img``` in the current directory. If you w
 ```
 docker run \
   --privileged=true \
-  -v ~/.ssh:/root/.ssh
-  -v $PWD:/tmp/udf
-  -t fgimenez/udf-in-a-box
+  -v ~/.ssh:/root/.ssh \
+  -v $PWD:/tmp/udf \
+  -t fgimenez/udf-in-a-box \
   ubuntu-device-flash core rolling -o /tmp/udf/file.img --channel edge --developer-mode
 ```
 
