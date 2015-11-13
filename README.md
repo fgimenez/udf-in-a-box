@@ -2,7 +2,7 @@
 
 This simple container lets you execute ubuntu-device-flash [1] to generate Ubuntu Core or Touch images inside a Docker container, so that you can get those images in any system that can run Docker.
 
-The basic command is:
+For generating a Ubuntu Core image for the 15.04 release and stable channel the basic command is:
 
 ```
 docker run \
